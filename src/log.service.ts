@@ -1,6 +1,5 @@
-///<reference path="../node_modules/@angular2/platform-browser/browser.d.ts"/>
-
-import {Injectable} from 'angular2/core';
+/// <reference path="../typings/index.d.ts" />
+import {Injectable} from    '@angular/core';
 import {Logger, Notification} from './logger';
 
 import {Subject} from 'rxjs/Rx'

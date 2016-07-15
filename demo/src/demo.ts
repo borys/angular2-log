@@ -1,6 +1,8 @@
-import {bootstrap}    from '@angular2/platform-browser'
-import {Component} from '@angular2/core';
-import {LogService} from 'angular2-log/log';
+/// <reference path="../typings/index.d.ts" />
+
+import {bootstrap}    from '@angular/platform-browser-dynamic'
+import {Component}    from '@angular/core';
+import {LogService}   from 'angular2-log/log';
 
 @Component({
     selector: 'demo-app',
@@ -12,7 +14,5 @@ export class DemoComponent {
 
     }
 }
-
-
 
 bootstrap(DemoComponent, [LogService]);

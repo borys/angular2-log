@@ -50,7 +50,7 @@ var tsProject = ts.createProject('src/tsconfig.json', {});
 gulp.task('build_src', function() {
 
     var tsResult = gulp.src([
-            'node_modules/angular2/typings/browser.d.ts',
+            'node_modules/@angular/platform-browser/browser.d.ts',
             'src/*.ts'
         ])
         .pipe(ts(tsProject, ts.reporter.defaultReporter()));

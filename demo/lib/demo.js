@@ -1,4 +1,6 @@
-System.register(['angular2/platform/browser', 'angular2/core', 'angular2-log/log'], function(exports_1) {
+System.register(['@angular/platform-browser-dynamic', '@angular/core', 'angular2-log/log'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,12 +10,12 @@ System.register(['angular2/platform/browser', 'angular2/core', 'angular2-log/log
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var browser_1, core_1, log_1;
+    var platform_browser_dynamic_1, core_1, log_1;
     var DemoComponent;
     return {
         setters:[
-            function (browser_1_1) {
-                browser_1 = browser_1_1;
+            function (platform_browser_dynamic_1_1) {
+                platform_browser_dynamic_1 = platform_browser_dynamic_1_1;
             },
             function (core_1_1) {
                 core_1 = core_1_1;
@@ -31,12 +33,13 @@ System.register(['angular2/platform/browser', 'angular2/core', 'angular2-log/log
                         selector: 'demo-app',
                         templateUrl: 'src/demo.html'
                     }), 
-                    __metadata('design:paramtypes', [log_1.LogService])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof log_1.LogService !== 'undefined' && log_1.LogService) === 'function' && _a) || Object])
                 ], DemoComponent);
                 return DemoComponent;
-            })();
+                var _a;
+            }());
             exports_1("DemoComponent", DemoComponent);
-            browser_1.bootstrap(DemoComponent, [log_1.LogService]);
+            platform_browser_dynamic_1.bootstrap(DemoComponent, [log_1.LogService]);
         }
     }
 });
